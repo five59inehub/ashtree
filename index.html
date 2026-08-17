@@ -1,0 +1,110 @@
+# ! FIVE59INEHUB™ — Fresno Resource Hub™
+### *One Hub. Every Resource. We Got You!* · **be PRESENT™**
+### © 2026 Fresno Resource Hub™ / Five59ine™ / Five59ineHub™. All Rights
+Reserved.
+---
+## " WHAT'S IN THIS FOLDER
+| File | What It Is | How To Use |
+|------|-----------|------------|
+| **`index.html`** | ✅ THE MAIN APP — dark dashboard, fully functional | Upload to
+Netlify/Vercel as-is |
+| `index-light-version.html` | Backup: the older light-theme version | Keep as a
+fallback only |
+| `qr-codes.html` | Printable QR code flyer designs | Open → Print |
+| `logos.html` | 3 brand logos (downloadable SVG) | Open → download logos |
+| `donate-flyer.html` | Donation flyer | Open → Print |
+| `README.md` | This file | Reference + ownership record |
+> **Which one do I deploy?** Use **`index.html`** (the dark dashboard). The light
+version is only a backup while you gather family feedback.
+---
+## $ DEPLOY (target: Thursday AM)
+### Fastest — Netlify drag & drop
+1. Go to **app.netlify.com** → your site
+2. Drag **`index.html`** onto the deploy area (it auto-replaces the old one)
+3. Live in ~30 seconds at your Netlify URL
+4. Hard-refresh your phone: hold reload / clear cache
+### Vercel (auto-deploy via GitHub)
+1. Push `index.html` to repo `UnDevelop3d87/Fresno-Resource-Hub`
+2. Vercel Settings → Framework: **Other**, Build Command: **(blank)**, Output:
+**`.`**
+3. Rename project to **`five59inehub`**
+4. Point domain **five59inehub.com** at Vercel DNS
+> Test on your own phone BEFORE marketing at venues. Click every page + every
+link.
+---
+## ! WHAT'S INSIDE THE APP
+- **92 verified organizations** across 18 categories
+- **30 events** (including the featured Juneteenth Experience 2026)
+- Dark "Command Center" dashboard design
+- Multi-page hash router: Home · Resources · Organizations · Near Me · Events ·
+Calendar · Mission
+- Search, category filtering, saved resources (⭐ ), AI assistant
+- Leaflet maps (Home + Near Me) with ZIP-based org placement
+- Live weather + clock + time-based greeting
+- Emergency strip: 911 · 988 · 211 · Marjaree Mason DV line
+- **Bus schedules**: FAX real-time tracker, routes, fares, Handy Ride + Fresno
+Unified school buses
+- **Juneteenth banner** — auto-shows now, auto-hides Monday June 22 (see
+below)
+- Beehiiv newsletter form + attribution tracking
+- Supabase connected (falls back to built-in data automatically)
+- Full legal pages: Privacy · Terms · Disclaimer · Ownership · Mission
+---
+## # JUNETEENTH AUTOMATION (IMPORTANT)
+The Juneteenth Experience 2026 banner on the home page is **automatic**:
+- **Shows:** now through **Sunday, June 21, 2026**
+- **Auto-hides:** starting **Monday, June 22, 2026** — no action needed from you
+- The logic re-checks hourly, so even if a browser tab is left open over the weekend
+it will disappear Monday
+The Juneteenth event also lives in the Events page (id `e30`). After the weekend
+you can leave it or remove it — your call. The banner handles itself.
+If you ever want to feature another weekend event the same way, the function to
+copy is `checkJuneteenth()` near the bottom of the script.
+---
+## $ INTEGRATIONS & ACCOUNTS
+**Beehiiv (newsletter)**
+- Form ID: `04f93ff4-495b-4856-b43b-87235310b417`
+- Both the sidebar form and attribution tracking are wired in
+- ⚠ The form only renders on the LIVE site, not in preview sandboxes
+- NEXT STEP: set up RSS-to-Send automation in Beehiiv (Automations → RSS-to-
+Send) for hands-off weekly emails
+**Supabase (database)**
+- Project: `pvzkrtlikektpotausgt`
+- App loads from Supabase if available, otherwise uses the 92 built-in orgs
+- ⚠ Supabase currently has fewer orgs than the built-in data — built-in is the
+source of truth for now
+**Payments**
+- Cash App: `$FresnoResourceHub`
+- Venmo: `@fresnoresourcehub`
+**Analytics**
+- Google Analytics: `G-P2P44QNKBE`
+---
+## " CONTACT ROUTING (Mailfence)
+| Purpose | Email |
+|---------|-------|
+| Main / Newsletter | fresnoresourcehub@mailfence.com |
+| Feedback & Info | fresnoresourcehub+info@mailfence.com |
+| Partnership | fresnoresourcehub+TeamUp@mailfence.com |
+| Help | fresnoresourcehub+help@mailfence.com |
+> Mailfence IMAP/SMTP requires a PAID plan. The +info, +TeamUp, +help addresses
+are aliases that route into your one main inbox — don't add them as separate phone
+accounts.
+---
+## ™ CLAIMED MARKS (all ™, NOT ® until registered)
+Fresno Resource Hub™ · Five59ine™ · Five59ineHub™ · The Hub™ · be PRESENT™ ·
+F.R.H.™ · FRH™ · 5.59™ · the sunflower logo #
+> Use ™ only until USPTO registration is granted. Using ® before registration is
+illegal.
+---
+## ✅ TO-DO (your side)
+- [ ] **Test `index.html` on your phone** — every page, every link (before Thursday)
+- [ ] Deploy to Netlify/Vercel by Thursday AM
+- [ ] Connect `five59inehub.com` domain (IONOS & Porkbun → Netlify DNS)
+- [ ] Set up Beehiiv RSS-to-Send weekly automation
+- [ ] Register copyright at copyright.gov (~$45)
+- [ ] Trademark "Five59ine" via free clinic (INTA Pro Bono / SJ College of Law IP
+clinic)
+- [ ] Confirm Mailfence aliases route correctly
+- [ ] After June 22: confirm Juneteenth banner auto-hid (it should)
+---
+*Built with " for Fresno County. Not affiliated with any government agency.*
