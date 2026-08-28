@@ -1,0 +1,76 @@
+html5/
+├── index.html
+├── manifest.json
+├── favicon.ico
+├── robots.txt
+│
+├── public/
+│   ├── about.html
+│   ├── resources.html
+│   ├── events.html
+│   └── contact.html
+│
+├── app/
+│   ├── dashboard.html
+│   ├── saved.html
+│   ├── profile.html
+│   └── notifications.html
+│
+├── admin/
+│   ├── index.html
+│   ├── users.html
+│   ├── resources.html
+│   ├── events.html
+│   ├── announcements.html
+│   └── analytics.html
+│
+├── assets/
+│   ├── images/
+│   │   ├── logo/
+│   │   ├── icons/
+│   │   ├── backgrounds/
+│   │   └── uploads/
+│   ├── fonts/
+│   └── media/
+│
+├── css/
+│   ├── core.css
+│   ├── theme.css
+│   ├── components.css
+│   ├── responsive.css
+│   └── pages/
+│       ├── home.css
+│       ├── dashboard.css
+│       └── admin.css
+│
+├── js/
+│   ├── app.js
+│   ├── config.js
+│   │
+│   ├── api/
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── resources.js
+│   │   └── events.js
+│   │
+│   ├── components/
+│   │   ├── navbar.js
+│   │   ├── sidebar.js
+│   │   ├── cards.js
+│   │   ├── modal.js
+│   │   └── notifications.js
+│   │
+│   ├── services/
+│   │   ├── auth-service.js
+│   │   ├── storage-service.js
+│   │   └── notification-service.js
+│   │
+│   └── utils/
+│       ├── helpers.js
+│       ├── validation.js
+│       └── formatters.js
+│
+└── data/
+    ├── resources.json
+    ├── events.json
+    └── config.json
